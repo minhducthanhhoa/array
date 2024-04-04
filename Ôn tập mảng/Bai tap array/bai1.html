@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function printIntegerElements(arr) {
+            let integerElements = [];
+
+            for (let element of arr) {
+                if (Number.isInteger(element)){
+                    integerElements.push(element);
+                }
+            }
+
+            if(integerElements.length > 0) {
+                console.log("Các phần tử số nguyên trong mảng là: ");
+                for (let integer of integerElements){
+                    console.log(integer);
+                }
+            } else {
+                console.log("Trong mảng không tồn tại số nguyên");
+            }
+        }
+        let myArray = [ 1,"abc", 2.4, "def", 4, 6, 7];
+        printIntegerElements(myArray);
+    </script>
+</body>
+</html>

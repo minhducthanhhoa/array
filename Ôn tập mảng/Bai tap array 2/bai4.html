@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        // Tạo mảng chỉ chứa số chẵn
+        var evenArr = arr.filter(function(num) {
+        return num % 2 === 0;
+        });
+
+        // Tạo mảng chỉ chứa số lẻ
+        var oddArr = arr.filter(function(num) {
+        return num % 2 !== 0;
+        });
+
+        console.log("Mảng chẵn: ", evenArr);
+        console.log("Mảng lẻ: ", oddArr);
+    </script>
+</body>
+</html>

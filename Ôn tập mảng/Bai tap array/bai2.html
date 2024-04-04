@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+        // Hàm tìm kiếm phần tử trong mảng 
+        function searchElementInArray(arr, element){
+            let foundIndexes = [];
+
+            for (let i = 0; i < arr.length; i++){
+                if(arr[i] === element){
+                    foundIndexes.push(i);
+                }
+            }
+            if (foundIndexes.length > 0){
+                console.log(`phần tử ${element} được tìm thấy tại các vị trí ${foundIndexes.join(", ")}`);
+            } else {
+                console.log("Phần tử không tồn tại trong mảng");
+            }
+        }
+        let myArray = [2, 4, 6, 7, 4, 8, 9];
+        let searchValue = prompt("Nhập giá trị cần tìm kiếm");
+        searchElementInArray(myArray, searchValue);
+   </script>
+</body>
+</html>

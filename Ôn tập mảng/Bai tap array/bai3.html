@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Khai báo mảng số nguyên
+        var arr = [1, 2, 3, 4, 5, 2, 3, 1, 2, 4];
+
+        var userInput = parseInt(prompt("Nhập một số nguyên: "));
+
+        //Điếm số lần xuất hiện của số đó trong mảng
+        var count = 0;
+        for (var i = 0; i < arr.length; i++){
+            if(arr[i] === userInput){
+                count++;
+            }
+        }
+        console.log("Số lần xuất hiện của số", userInput, "là", count);
+    </script>
+</body>
+</html>

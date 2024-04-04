@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = parseInt(prompt("Nhập số nguyên dương a: "));
+        var b = parseInt(prompt("Nhập số nguyên dương b: "));
+
+        //Khai báo các mảng để lưu các số thỏa mãn
+        var numbers = [];
+        
+        //Kiểm tra và lưu các số chia hết cho b trong khoảng từ 1 đến a
+        for (var i = 1; i <= a; i++){
+            if(i % b === 0){
+                numbers.push(i);
+            }
+        }
+        
+        //Kiểm tra và lưu các số chia hết cho a trong khoảng từ 1 đến b 
+        for (var j = 1; j <= b; j++){
+            if(j % a === 0){
+                numbers.push(j);
+            }
+        }
+
+        console.log("Các số chia hết cho", b, "hoặc", a, "trong khoảng từ 1 đến", Math.max(a, b), "là", numbers);
+    </script>
+</body>
+</html>
